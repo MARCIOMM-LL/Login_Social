@@ -1,0 +1,16 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+  path: /
+  controller: App\Controller\HomepageController::index
+
+dashboard:
+  path: /dashboard
+  controller: App\Controller\HomepageController::dashboard
+
+
+logout:
+  path: /logout
+  controller: App\Controller\HomepageController::logout
