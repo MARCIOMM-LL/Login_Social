@@ -51,7 +51,7 @@ class MyFacebookAuthenticator extends SocialAuthenticator
             $user = new User();
             $user->setEmail($facebookUser->getEmail());
             $user->setFullname($facebookUser->getName());
-            //$user->setImage($facebookUser->getAvatar());
+            $user->setImage($facebookUser->getPictureUrl());
             $user->setCreatedAt(new \DateTime(date('Y-m-d H:i:s')));
             $this->em->persist($user);
             $this->em->flush();
